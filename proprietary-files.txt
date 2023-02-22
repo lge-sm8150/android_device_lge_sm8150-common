@@ -1,3 +1,5 @@
+# All unpinned blobs below are extracted from LM-V500EM 40b
+
 # ADSP
 vendor/bin/adsprpcd
 vendor/bin/dspservice
@@ -488,8 +490,8 @@ vendor/lib64/libhbtpdsp.so
 vendor/lib64/libhbtpfrmwk.so
 
 # Hotword Enrollment
--product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk;PRESIGNED
--product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk;PRESIGNED
+-product/priv-app/HotwordEnrollmentOKGoogleHEXAGON_WCD9340/HotwordEnrollmentOKGoogleHEXAGON_WCD9340.apk;PRESIGNED
+-product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WCD9340/HotwordEnrollmentXGoogleHEXAGON_WCD9340.apk;PRESIGNED
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
 system_ext/framework/com.android.hotwordenrollment.common.util.jar
 
@@ -499,7 +501,6 @@ vendor/etc/excluded-input-devices.xml
 # IO Prefetcher
 vendor/bin/hw/vendor.qti.hardware.iop@2.0-service
 vendor/etc/init/vendor.qti.hardware.iop@2.0-service.rc
-vendor/lib64/libqti-iopd-client-vendor.so
 vendor/lib64/libqti-iopd-client.so
 vendor/lib64/libqti-iopd.so
 vendor/lib64/vendor.qti.hardware.iop@1.0.so
@@ -670,20 +671,16 @@ vendor/etc/powerhint.xml
 vendor/lib/libperfconfig.so
 vendor/lib/libperfgluelayer.so
 vendor/lib/libperfioctl.so
-vendor/lib/libqti-perfd-client-vendor.so
 vendor/lib/libqti-perfd-client.so
 vendor/lib/libqti-perfd.so
-vendor/lib/libqti-util-vendor.so
 vendor/lib/libqti-util.so
 vendor/lib64/liblearningmodule.so
 vendor/lib64/libmeters.so
 vendor/lib64/libperfconfig.so
 vendor/lib64/libperfgluelayer.so
 vendor/lib64/libperfioctl.so
-vendor/lib64/libqti-perfd-client-vendor.so
 vendor/lib64/libqti-perfd-client.so
 vendor/lib64/libqti-perfd.so
-vendor/lib64/libqti-util-vendor.so
 vendor/lib64/libqti-util.so
 
 # Peripheral manager
@@ -767,7 +764,6 @@ system_ext/etc/permissions/qcrilhook.xml
 system_ext/etc/permissions/qti_libpermissions.xml
 system_ext/etc/permissions/qti_permissions.xml
 system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml
-system_ext/etc/permissions/telephonyservice.xml
 system_ext/framework/qcrilhook.jar
 -system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 -vendor/app/IWlanService/IWlanService.apk
@@ -862,6 +858,7 @@ vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.2.so
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so
 vendor/radio/qcril_database/qcril.db
 vendor/radio/qcril_database/upgrade/0_initial.sql
+vendor/radio/qcril_database/upgrade/10_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/1_version_intro.sql
 vendor/radio/qcril_database/upgrade/2_version_add_wps_config.sql
 vendor/radio/qcril_database/upgrade/3_version_update_wps_config.sql
@@ -870,15 +867,12 @@ vendor/radio/qcril_database/upgrade/5_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/6_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/7_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/8_version_update_ecc_table.sql
+vendor/radio/qcril_database/upgrade/9_version_update_ecc_table.sql
 
 # Telephony (qti-telephony-common) - from repo8 - cmi-qssi-user-11-RKQ1.200710.002-V12.1.2.0.RJACNXM-release-keys
 product/framework/qti-telephony-common.jar:system_ext/framework/qti-telephony-common.jar|78f600ef38a46e592684ba30c615b1aea7dcc9a4
 
 # RIL - IMS
-system_ext/lib64/lib-imsvideocodec.so
-system_ext/lib64/lib-imsvt.so
-system_ext/lib64/lib-imsvtextutils.so
-system_ext/lib64/lib-imsvtutils.so
 system_ext/lib64/libdiag_system.so
 system_ext/lib64/libimscamera_jni.so
 system_ext/lib64/libimsmedia_jni.so
@@ -989,10 +983,6 @@ system_ext/lib/libseccam-ipc.so
 system_ext/lib/libseccam.so
 system_ext/lib/vendor.qti.hardware.seccam@1.0.so
 -system_ext/priv-app/seccamservice/seccamservice.apk
-vendor/bin/hw/vendor.qti.hardware.seccam@1.0-service-qti
-vendor/etc/init/vendor.qti.hardware.seccam@1.0-service-qti.rc
-vendor/lib/vendor.qti.hardware.seccam@1.0.so
-vendor/lib64/vendor.qti.hardware.seccam@1.0.so
 
 # Sensors
 vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service
